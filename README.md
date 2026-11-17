@@ -186,10 +186,8 @@ Mise en forme : menu latéral, bannière, tableau lisible, formulaires en cartes
 
 - Les mots de passe sont stockés **en clair** dans `functions.php` : acceptable pour un TP, à remplacer par `password_hash()` et `password_verify()` en production.
 - Le stockage dans un fichier texte ne convient pas à un usage multi-utilisateurs intensif (pas de verrouillage des écritures).
-- La taille maximale de la photo est fixée à **2 Mo** dans le code, alors que l'énoncé du TP indique 1 Mo.
-- Le contrôle de l'upload se base sur l'extension du fichier, pas sur son contenu réel.
 - Aucun mécanisme de protection CSRF sur les formulaires et sur le lien de suppression (méthode GET).
-- Les extensions « Bonus » de l'énoncé (email, cookie thème, moyenne par filière, refus des doublons, export CSV) ne sont pas réalisées.
+
 
 ---
 
